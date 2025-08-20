@@ -27,7 +27,7 @@ app = Client(
 )
 
 @app.on_message(
-    filters.command("start")
+    filters.command("chita_hi_kehde")
     & filters.private
 )
 async def start_command(client, message: Message):
@@ -69,3 +69,4 @@ async def banall_command(client, message: Message):
 app.start()
 print("Banall-Bot Booted Successfully")
 idle()
+
